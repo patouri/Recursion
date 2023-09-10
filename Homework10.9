@@ -1,0 +1,59 @@
+class Main {
+  public static void main(String[] args) {
+
+
+    System.out.println(sum(4));
+    System.out.println(atzeret(4));
+    System.out.println(ex3(5));
+    System.out.println(ex4(365));
+    System.out.println(ex5(10,2));
+    System.out.println(ex6(8,3));
+
+
+  }
+
+    public static int sum(int n){
+      if (n == 1){
+        return 1;
+      }
+      return(sum(n-1)+n);
+    }
+
+    public static int atzeret(int n){
+      if (n == 1){
+        return 1;
+      }
+      return(atzeret(n-1)*n);
+    }
+    public static int ex3(int n){
+      if (n <= 1){
+        return 1;
+      }
+      return(ex3(n-2)*n);
+    }
+    public static int ex4(int n){
+      if (n == 0){
+        return 0;
+      }
+      return(1 + ex4(n/10));
+    }
+    public static int ex5(int numa, int numb){
+      if (numa<numb){
+        return 0;
+      }
+      return(1 + ex5(numa - numb, numb));
+    }
+  public static int ex6(int numa, int numb){
+      if (numa<numb){
+        return numa;
+      }
+      return(ex6(numa - numb, numb));
+    }
+
+  public static boolean ex7(int x, int y){
+      if (numa<numb){
+        return numa;
+      }
+      return(ex7(numa - numb, numb));
+    }
+}
